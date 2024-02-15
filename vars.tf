@@ -4,3 +4,12 @@
 variable "name" {
   
 }
+
+variable "prod" {
+  
+}
+
+variable "dev" {
+
+  
+}
