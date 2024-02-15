@@ -1,3 +1,6 @@
-variable "istest" {
+/*variable "istest" {
       
+}*/
+variable "name" {
+  
 }
