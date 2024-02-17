@@ -1,4 +1,4 @@
-locals {
+/*locals {
   common_tags = {
     Owner = "DevOps Team"
     service = "backend"
@@ -35,4 +35,4 @@ resource "aws_ebs_volume" "Db-volume" {
    availability_zone = "us-east-1d"
    tags = merge(local.common_tags, { Name = var.ebs })
    
-}
+}*/

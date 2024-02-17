@@ -40,6 +40,7 @@ resource "aws_security_group_rule" "ssh-rule" {
   from_port = 22
   to_port = 22
   protocol = "tcp"
+  description = "ingress rule for Allowing SSh"
   cidr_blocks = ["0.0.0.0/0"]
   security_group_id = aws_security_group.allow-ssh.id
 }
@@ -49,6 +50,7 @@ resource "aws_security_group_rule" "ssh-egress" {
   from_port = 22
   to_port = 22
   protocol = "tcp"
+  description = "egress rule ssh"
   cidr_blocks = ["0.0.0.0/0"]
   security_group_id = aws_security_group.allow-ssh.id
 }

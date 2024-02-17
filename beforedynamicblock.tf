@@ -1,4 +1,4 @@
-resource "aws_security_group" "sg-demo" {
+/*resource "aws_security_group" "sg-demo" {
   name        = "demo-sg"
   description = "Allow TLS inbound traffic and all outbound traffic"
   tags = {

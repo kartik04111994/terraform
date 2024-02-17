@@ -2,7 +2,7 @@
     region = "us-east-1" 
 } */
 
-variable "dev" {}
+/*variable "dev" {}
 variable "prod" {
 }
 variable "istest" {
@@ -24,4 +24,4 @@ resource "aws_instance" "test-dev" {
   tags = {
     Name = var.dev[count.index]
   }
-}
+}*/

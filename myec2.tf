@@ -1,4 +1,4 @@
-provider "aws" {
+/* provider "aws" {
     region = "us-east-1" 
 }
 
@@ -10,8 +10,6 @@ resource "aws_instance" "myfirst" {
         Name = "test.${count.index}"
     }  
 }
-
-
 # splat expression [*] for seeing all the arns of the created resource
 output "arns" {
   value = aws_instance.myfirst[*].arn
@@ -19,6 +17,4 @@ output "arns" {
 
 # splat expression [*] for seeing all the IDs of the created resource
 # splat expression [0] for seeing IDs of first instance of the created resource
-output "arns" {
-  value = aws_instance.myfirst[*].id
-}
+*/

@@ -1,4 +1,4 @@
-variable "sg_ports" {
+/*variable "sg_ports" {
     type = list(number)
     description = "ingress ports for sg"
     default = [80,8080,443,554]  
@@ -24,4 +24,4 @@ resource "aws_security_group" "dynamicsg" {
    
     }
   
-}
+} */

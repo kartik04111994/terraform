@@ -2,7 +2,7 @@
     name = each.key
     for_each = toset(["user1","user2","user3"])
   
-}*/
+}
 
 resource "aws_instance" "demoservers" {
     ami = "ami-0e731c8a588258d0d"
@@ -15,8 +15,6 @@ resource "aws_instance" "demoservers" {
     key_name = each.key
     tags = {
       name = each.value
-    }
-
-    
+    }    
   
-}
+} */
