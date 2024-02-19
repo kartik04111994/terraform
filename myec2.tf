@@ -1,17 +1,17 @@
-/* provider "aws" {
+provider "aws" {
     region = "us-east-1" 
 }
 
 resource "aws_instance" "myfirst" {
     ami = "ami-0e731c8a588258d0d"
-    instance_type = "t2.micro"
-    count = 2
+    instance_type = lookup(var.instance_type,terraform.workspace)
+    count = 1
     tags ={
         Name = "test.${count.index}"
     }  
 }
 # splat expression [*] for seeing all the arns of the created resource
-output "arns" {
+/*output "arns" {
   value = aws_instance.myfirst[*].arn
 }
 
