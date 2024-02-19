@@ -2,6 +2,15 @@ provider "aws" {
     region = "us-east-1" 
 }
 
+variable "instance_type" {
+    type = map(string)
+    default = {
+      "default" = "t2.micro"
+      "DEV" = "t2.small"
+      "prod" = "t2.medium"
+    }
+  
+}
 resource "aws_instance" "myfirst" {
     ami = "ami-0e731c8a588258d0d"
     instance_type = lookup(var.instance_type,terraform.workspace)
