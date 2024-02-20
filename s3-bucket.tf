@@ -1,3 +1,7 @@
+#############################################
+// S3 resource creation
+##################################
+
 /*resource "aws_s3_bucket" "demo-bucket" {
     bucket = "terraform-bucket-demo"
     tags = {
