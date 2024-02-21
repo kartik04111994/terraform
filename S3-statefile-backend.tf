@@ -1,7 +1,7 @@
 ##########################################
 // DYnamo DB table creations for acquiring STATE_ LOCKING 
 ###########################################
-resource "aws_dynamodb_table" "lockid_table" {
+/*resource "aws_dynamodb_table" "lockid_table" {
   name           = "stateLocktable"
   hash_key       = "LockID"
   billing_mode = "PAY_PER_REQUEST"
