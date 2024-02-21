@@ -28,7 +28,7 @@ resource "aws_dynamodb_table" "lockid_table" {
   billing_mode = "PAY_PER_REQUEST"
   attribute {
     name = "LockID"
-    type = "S"  # S for String
+    type = "S"  # S for Strings
   }
 
   tags = {
