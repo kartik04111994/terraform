@@ -1,6 +1,6 @@
 /*variable "istest" {
       
-}*/
+}*
 #variable "name" {}
 
 variable "instance_type" {
@@ -11,4 +11,4 @@ variable "instance_type" {
       "prod" = "t2.medium"
     }
   
-}
+}*/

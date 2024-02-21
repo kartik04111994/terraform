@@ -1,4 +1,4 @@
-provider "aws" {
+/*provider "aws" {
     region = "us-east-1"
 }
 resource "aws_instance" "nginx-demo" {
@@ -58,4 +58,4 @@ resource "aws_security_group_rule" "ssh-egress" {
 # output block for IP
 output "public_ip" {
     value = aws_instance.nginx-demo.public_ip
-}
+}*/

@@ -1,7 +1,7 @@
 #EVeyrtime user can't remember the AMI ID's for the launch. Hence we can use Data source
 #for the requirement
 
-provider "aws" {
+/*provider "aws" {
   region = "ap-south-1"
 }
 
@@ -23,4 +23,4 @@ resource "aws_instance" "myfirst" {
     tags = {
         Name = "test"
     }  
-} 
+} */
