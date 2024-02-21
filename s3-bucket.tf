@@ -1,7 +1,9 @@
 #############################################
 // S3 resource creation
 ##################################
-
+##########
+// subfolders under the bucket Dev and Prod
+##################
 resource "aws_s3_bucket" "demo-bucket" {
     bucket = "terraform-bucket-demo"
     tags = {
