@@ -2,7 +2,7 @@ provider "aws" {
     region = "us-east-1" 
 }
 
-variable "instance_type" {
+/*variable "instance_type" {
     type = map(string)
     default = {
       "default" = "t2.micro"
