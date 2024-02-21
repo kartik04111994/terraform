@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "demo-bucket" {
       
     }
   
-}*/
+}
 
 #############################################
 // S3 backend for storing state files
