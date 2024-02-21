@@ -18,11 +18,11 @@ resource "aws_dynamodb_table" "lockid_table" {
 #############################################
 // S3 backend for storing state files
 ##################################
-terraform {
+/*terraform {
   backend "s3" {
     bucket = "terraform-bucket-demo"
     key    = "Dev/terraform.tfstate"
     region = "us-east-1"
     dynamodb_table = "stateLocktable"  # newly created dynamoDB table 
   }
-}
+}*/
