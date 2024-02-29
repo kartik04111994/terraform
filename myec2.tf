@@ -1,7 +1,6 @@
 provider "aws" {
     region = "us-east-1" 
 }
-
 resource "aws_instance" "democloud" {
   ami = "ami-0e731c8a588258d0d"
   instance_type = "t2.micro"
@@ -9,6 +8,16 @@ resource "aws_instance" "democloud" {
   tags ={
     Name = "hello-world"
   } 
+}
+
+terraform {
+  cloud {
+    organization = "My-terraform0411"
+
+    workspaces {
+      name = "Terraform-demo"
+    }
+  }
 }
 
 /*variable "instance_type" {
