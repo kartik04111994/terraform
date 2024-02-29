@@ -2,7 +2,7 @@
 // S3 resource creation
 ##################################
 
-resource "aws_s3_bucket" "demo-bucket" {
+/*resource "aws_s3_bucket" "demo-bucket" {
     bucket = "terraform-bucket-demo"
     force_destroy = true
     tags = {
@@ -21,7 +21,7 @@ resource "aws_s3_object" "Prod" {
   acl    = "private"
   force_destroy = true
 }
-
+*/
 
 
 
